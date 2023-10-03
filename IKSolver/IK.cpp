@@ -12,9 +12,6 @@
 #include <math.h>
 using namespace std;
 
-// CSCI 520 Computer Animation and Simulation
-// Jernej Barbic and Yijing Li
-
 namespace
 {
 
@@ -58,16 +55,6 @@ void forwardKinematicsFunction(
     int numIKJoints, const int * IKJointIDs, const FK & fk,
     const std::vector<real> & eulerAngles, std::vector<real> & handlePositions)
 {
-  // Students should implement this.
-  // The implementation of this function is very similar to function computeLocalAndGlobalTransforms in the FK class.
-  // The recommended approach is to first implement FK::computeLocalAndGlobalTransforms.
-  // Then, implement the same algorithm into this function. To do so,
-  // you can use fk.getJointUpdateOrder(), fk.getJointRestTranslation(), and fk.getJointRotateOrder() functions.
-  // Also useful is the multiplyAffineTransform4ds function in minivectorTemplate.h . <- using this
-  // It would be in principle possible to unify this "forwardKinematicsFunction" and FK::computeLocalAndGlobalTransforms(),
-  // so that code is only written once. We considered this; but it is actually not easily doable.
-  // If you find a good approach, feel free to document it in the README file, for extra credit.
-
     int numJoints = fk.getNumJoints();
 
     // these couldn't be arrays for some reason and had to be vectors??
